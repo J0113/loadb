@@ -7,9 +7,9 @@
      function ImgLoad(myobj){
        var randomNum = Math.round(Math.random() * 10000);
        var oImg=new Image;
-       oImg.src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"+"?rand="+randomNum;
-       oImg.onload=function(){window.location.replace("https://www.google.com");}
-       oImg.onerror=function(){status1.innerHTML="<p><b>google.com isn't working</b></p>";}
+       oImg.src="http://jolle.tk/ping.html"+"?rand="+randomNum;
+       oImg.onload=function(){window.location.replace("http://jolle.tk);}
+       oImg.onerror=function(){window.location.replace("error.html");}
 }
 
 networkchecker = window.setInterval(function(){window.onload=ImgLoad()},2500);
