@@ -3,22 +3,18 @@
 </head>
 
 <body>
-  <h1>Welkom op mijn website</h1>
-  <HR>
-  <p>Dit wordt de loadbalancer!</p>
- 
-   <script>
-    function ping(){
-       $.ajax({
-          url: 'http://jolle.tk/ping.html',
-          success: function(result){
-             window.location.replace("http://jolle.tk");
-          },     
-          error: function(result){
-              window.location.replace("error.html");
-          }
-       });
-    }
-   </script>
+<script>
+     function ImgLoad(myobj){
+       var randomNum = Math.round(Math.random() * 10000);
+       var oImg=new Image;
+       oImg.src="http://jolle.tk/test.html"+"?rand="+randomNum;
+       oImg.onload=function(){status.innerHTML="<p><b>Jolle.tk is working</b></p>";}
+       oImg.onerror=function(){status.innerHTML="<p><b>Jolle.tk isn't working</b></p>";}
+}
+
+networkchecker = window.setInterval(function(){window.onload=ImgLoad()},2500);
+</script>
+
+<div id="status"><p><b>Checking...</b></p></div>
  
  </body>
