@@ -4,10 +4,10 @@
        $.ajax({
           url: 'http://jolle.tk/ping.html',
           success: function(result){
-             alert('reply');
+             window.location.replace("http://jolle.tk");
           },     
           error: function(result){
-              alert('timeout/error');
+              window.location.replace("error.html");
           }
        });
     }
