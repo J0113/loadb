@@ -7,7 +7,7 @@
      function ImgLoad(myobj){
        var randomNum = Math.round(Math.random() * 10000);
        var oImg=new Image;
-       oImg.src="http://google.com"+"?rand="+randomNum;
+       oImg.src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"+"?rand="+randomNum;
        oImg.onload=function(){status1.innerHTML="<p><b>google.com is working</b></p>";}
        oImg.onerror=function(){status1.innerHTML="<p><b>google.com isn't working</b></p>";}
 }
@@ -15,6 +15,6 @@
 networkchecker = window.setInterval(function(){window.onload=ImgLoad()},2500);
 </script>
 
-<div id="status1"><p><b>Please wait...</b></p></div>
+<div id="status1"><p><b>Selecting the best server</b></p></div>
  
  </body>
