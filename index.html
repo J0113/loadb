@@ -7,9 +7,9 @@
      function ImgLoad(myobj){
        var randomNum = Math.round(Math.random() * 10000);
        var oImg=new Image;
-       oImg.src="http://jolleeeeeeeeeeeeeeeeeeeeeeee.tk/ping.html"+"?rand="+randomNum;
-       oImg.onload=function(){status1.innerHTML="<p><b>Jolle.tk is working</b></p>";}
-       oImg.onerror=function(){status1.innerHTML="<p><b>Jolle.tk isn't working</b></p>";}
+       oImg.src="http://google.com"+"?rand="+randomNum;
+       oImg.onload=function(){status1.innerHTML="<p><b>google.com is working</b></p>";}
+       oImg.onerror=function(){status1.innerHTML="<p><b>google.com isn't working</b></p>";}
 }
 
 networkchecker = window.setInterval(function(){window.onload=ImgLoad()},2500);
